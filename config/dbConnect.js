@@ -1,6 +1,5 @@
 const mongoose =  require("mongoose");
 const db_pass =  process.env.dbPassword;
-console.log(db_pass);
 const url = `mongodb+srv://akmongo_city:${db_pass}p@cluster0.ohauo.mongodb.net/todo_data?retryWrites=true&w=majority`
 async function connect(){
    try{
