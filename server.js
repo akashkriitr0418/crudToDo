@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 function myinit(){
     app.use("/api", crudRoutes);
-    app.use("/api/user", crudRoutes);
+    app.use("/api/user", userRoutes);
     app.listen(port, () => {
         console.log(`Listening to http://localhost:${port}`);
     });
